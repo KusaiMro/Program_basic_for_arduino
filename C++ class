@@ -1,0 +1,45 @@
+class Calculation
+{
+	int a,b,c;
+  public:
+  void set(int n1,int n2,int n3){
+	a=n1;
+    b=n2;
+    c=n3;
+  }
+  void sum(){
+    Serial.print("Summation is: ");
+    Serial.println(a+b+c);
+  }
+  void multiply(){
+   Serial.print("Multiplication is: ");
+   Serial.println(a*b*c);
+  }
+  void largestNumber(){
+    Serial.print("The largest Number: ");
+    if(a>=b && a>=c){
+     Serial.print(a); 
+    }
+    else if(b>=a && b>=c){
+      Serial.print(b); 
+    }
+    else{
+      Serial.print(c);   
+    }
+  }
+};
+
+void setup()
+{
+  Serial.begin(9600);
+  Calculation ob;
+  ob.set(10,30,20);
+  ob.sum();
+  ob.multiply();
+  ob.largestNumber();
+}
+
+void loop()
+{
+	
+}
