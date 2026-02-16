@@ -1,0 +1,23 @@
+// C++ code
+//input define
+
+
+
+void setup()
+{
+	Serial.begin(9600);
+ 
+}
+
+void loop()
+{
+
+  //int a = Serial.parseInt();
+  //Serial.println(a);
+  
+  //char c = Serial.read();
+  //Serial.println(c); 
+  
+  tring s = Serial.readString();
+  Serial.println(s);
+}
